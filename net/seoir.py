@@ -1,5 +1,3 @@
-SEOIR: Simplex-Evolutionary Optimization for All-in-One Image Restoration
-
 import numbers
 
 import torch
