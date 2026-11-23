@@ -15,13 +15,13 @@
   <b>Yixiang Chen</b><sup>1</sup>, <b>Jinhua Wang</b><sup>1,&dagger;</sup>, <b>Ning He</b><sup>1</sup>,
   <b>Shiji Wang</b><sup>1</sup>, <b>Jinxiu Chen</b><sup>1</sup>, <b>Kangning Wang</b><sup>1</sup><br/>
   <sup>1</sup> Beijing Union University, Beijing, China<br/>
-  <sup>&dagger;</sup> Corresponding authors: <a href="mailto:xxtwangjinhua@buu.edu.cn">xxtwangjinhua@buu.edu.cn</a>, <a href="mailto:xxthening@buu.edu.cn">xxthening@buu.edu.cn</a>
+  <sup>&dagger;</sup> Corresponding authors: <a href="mailto:xxtwangjinhua@buu.edu.cn">xxtwangjinhua@buu.edu.cn</a>
 </p>
 
 ## News
 
-- [x] `11/2026`: Code and qualitative results released.
-- [ ] Quantitative results and pretrained checkpoints.
+- [x] `11/2026`: Quantitative results and pretrained checkpoints.
+- [x] `12/2026`: Test code and qualitative results released.
 
 ## Overview
 
@@ -238,17 +238,5 @@ If you find this work useful, please cite:
 ## Acknowledgements
 
 This repository builds on the code base of [AnyIR](https://github.com/Amazingren/AnyIR), and through it on [PromptIR](https://github.com/va1shn9v/PromptIR) and [AirNet](https://github.com/XLearning-SCU/2022-CVPR-AirNet). We thank the authors for making their work publicly available.
-
-<details>
-<summary>Contact</summary>
-
-| Name | Email |
-| --- | --- |
-| Yixiang Chen | 20251081210215@buu.edu.cn |
-| Jinhua Wang | xxtwangjinhua@buu.edu.cn |
-| Ning He | xxthening@buu.edu.cn |
-| Shiji Wang | 20251081210227@buu.edu.cn |
-| Jinxiu Chen | 20251081210205@buu.edu.cn |
-| Kangning Wang | 20252085410215@buu.edu.cn |
 
 </details>
