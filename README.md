@@ -205,7 +205,7 @@ python test.py \
   --dehaze_path /path/to/test/Dehaze/ \
   --gopro_path /path/to/test/Deblur/ \
   --enhance_path /path/to/test/Enhance/ \
-  --ckpt_name 5deg/epoch=109-step=546700.ckpt \
+  --ckpt_name 5deg/seoir-AiO5D.ckpt \
   --output_path ./outputs/5deg_test
 ```
 
@@ -217,7 +217,7 @@ Checkpoints are looked up as `train_ckpt/<ckpt_name>`, PSNR / SSIM are printed p
 python test.py \
   --trainset CDD11_low_haze_rain \
   --cdd11_path /path/to/cdd11/ \
-  --ckpt_name cdd11/epoch=154-step=378045.ckpt \
+  --ckpt_name cdd11/seoir-cdd11.ckpt \
   --output_path ./outputs/cdd11_test
 ```
 

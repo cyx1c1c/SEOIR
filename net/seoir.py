@@ -9,6 +9,9 @@ from einops import rearrange
 from fvcore.nn import FlopCountAnalysis, flop_count_table
 from timm.models.layers import DropPath
 
+BIAS_FREE = 'BiasFree'
+WITH_BIAS = 'WithBias'
+
 def to_3d(x):
     return rearrange(x, 'b c h w -> b (h w) c')
 
