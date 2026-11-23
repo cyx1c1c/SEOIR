@@ -1,14 +1,4 @@
 #!/bin/bash
-#SBATCH --job-name=deg3_test
-#SBATCH --partition=batch
-#SBATCH --constraint=type-gpu
-#SBATCH --nodelist=gcp-us2-h200-jlrn
-#SBATCH --nodes=1
-#SBATCH --ntasks=1
-#SBATCH --gres=gpu:h200:1
-#SBATCH --time=01:00:00
-#SBATCH --output=./joblogs/deg3_test_ep87.log
-#SBATCH --error=./joblogs/deg3_test_ep87.error
 
 
 ### ===== [1] Environment Setup =====
@@ -21,7 +11,7 @@ source ~/.bashrc
 micromamba activate seoir
 
 # Project directory
-cd /root/autodl-tmp/SEOIR
+cd /project/train/src_repo/SEOIR/
 
 
 ### ===== [2] Configurations =====
@@ -47,11 +37,11 @@ python test.py \
 python test.py \
     --trainset SEOIR \
     --mode 5 \
-    --denoise_path "/root/autodl-tmp/SEOIR/data_dir/data/test/35deg_test/denoise/" \
-    --derain_path "/root/autodl-tmp/SEOIR/data_dir/data/test/35deg_test/derain/" \
-    --dehaze_path "/root/autodl-tmp/SEOIR/data_dir/data/test/35deg_test/dehaze/" \
-    --gopro_path "/root/autodl-tmp/SEOIR/data_dir/data/test/35deg_test/deblur/" \
-    --enhance_path "/root/autodl-tmp/SEOIR/data_dir/data/test/35deg_test/enhance/" \
-    --ckpt_name 3deg/epoch=129-step=563940.ckpt \
-    --output_path ./outputs/3deg_test_ep129
+    --denoise_path "$DENOISE_DIR" \
+    --derain_path "$DERAIN_DIR" \
+    --dehaze_path "$DEHAZE_DIR" \
+    --gopro_path "$GOPRO_DIR" \
+    --enhance_path "$ENHANCE_DIR" \
+    --ckpt_name 3deg/seoir-AiO3D.ckpt \
+    --output_path ./outputs/3deg
 
